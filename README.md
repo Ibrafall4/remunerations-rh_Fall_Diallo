@@ -11,7 +11,7 @@ Ibrahima FALL et Boubacar DIALLO
 
 Application de visualisation interactive pour **suivre et comparer les rémunérations des salariés** d'une entreprise fictive selon la tranche d'âge, le sexe, l'état civil et le type de contrat.
 
-**Application en ligne :** *lien shinyapps.io à ajouter après le déploiement*
+**Application en ligne :** *https://ibrahima-fall.shinyapps.io/remunerations-rh/*
 
 ## Fonctionnalités (consignes du sujet)
 
