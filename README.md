@@ -57,17 +57,16 @@ shiny::runApp()            # depuis le dossier du projet
 
 Dans RStudio : ouvrir `ui.R` ou `server.R`, puis cliquer sur **Run App**.
 
-## Publier
+## Déploiement
 
-1.  **GitHub** : créer un dépôt public, puis sur la page du dépôt, cliquer sur *uploading an existing file* et y glisser `global.R`, `ui.R`, `server.R`, `README.md`, `.gitignore` et le dossier `data/`.
+L'application est publiée sur shinyapps.io avec le package rsconnect.
+Après avoir relié RStudio à un compte shinyapps.io (commande
+`rsconnect::setAccountInfo()` à taper dans la console, jamais dans un
+fichier du dépôt) :
 
-2.  **shinyapps.io** : relier RStudio au compte en tapant une seule fois dans la console `rsconnect::setAccountInfo(name = ..., token = ..., secret = ...)` (identifiants : shinyapps.io \> Account \> Tokens ; ne jamais les écrire dans un fichier du dépôt, qui est public), puis :
-
-    ``` r
-    rsconnect::deployApp(appName = "remunerations-rh")
-    ```
-
-    ou bouton *Publish* de RStudio.
+```r
+rsconnect::deployApp(appName = "remunerations-rh")
+```
 
 ## Nettoyage des données (résumé)
 
